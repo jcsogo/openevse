@@ -222,6 +222,16 @@ BINARY_SENSORS: Final[dict[str, BinarySensorEntityDescription]] = {
     "vehicle": BinarySensorEntityDescription(
         name="Vehicle Connected", key="vehicle", device_class=DEVICE_CLASS_PLUG
     ),
+    "manual_override": BinarySensorEntityDescription(
+        name="Manual Override",
+        key="manual_override",
+        device_class=DEVICE_CLASS_POWER
+    ),
+    "divert_mode": BinarySensorEntityDescription(
+        name="Divert Mode",
+        key="divertmode",
+        device_class=DEVICE_CLASS_POWER
+    ), 
     "using_ethernet": BinarySensorEntityDescription(
         name="Ethernet Connected",
         key="using_ethernet",
